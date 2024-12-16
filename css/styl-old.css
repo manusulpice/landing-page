@@ -8,26 +8,28 @@ li {
 }
 
 body{
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", sans-serif; 
 }
 
-.header, .first-block, .footer-block {
+.dark-background {
+  display: block;
+  padding-left: 15em;
+  padding-right: 15em;
   background-color: #1F2936;
-  padding: 0rem 11rem;
+  color: #F9FAF8;
+  font: Roboto;
 }
-
-/* HEADER */
 
 .header {
-  display: flex;
-  color: #F9FAF8;
   height: 80px;
+  display:flex;
   align-items: center;
   justify-content: space-between;
 }
 
 .headerlogo {
   font-size: 24px;
+  color: #F9FAF8;
 }
 
 .header-links {
@@ -38,26 +40,22 @@ body{
  color: #E5E7EB;
 }
 
-/* SECTION 1 */
-
-.first-block {
+.middle-block {
   display: flex;
   flex: 1;
   justify-content: space-evenly;
   height: 240px;
-  padding: 100px 11rem;
-  gap: 100px;
+  padding: 100px 0px;
+  gap: 50px;
 }
 
-.first-block-left{
-  display: flex;
-  flex-direction: column;
-  align-content: space-evenly;
-  justify-content: center;
+.title-block{
+  display: block;
   width: 400px;
 }
 
 .title{
+  display: flex;
   font-size: 48px;
   color: #F9FAF8;
 }
@@ -70,7 +68,6 @@ body{
 .button {
   display: flex;
   background-color: #3882F6;
-  color: #E5E7EB;
   height: 30px;
   width:100px;
   border-radius: 8px;
@@ -89,19 +86,16 @@ body{
   align-items: center;
 }
 
-/* SECTION 2*/
-
-.second-block {
+.bottom-block {
   height: 340px;
   padding:40px 300px;
 }
 
-.second-block a {
-  display: flex;
-  justify-content: center;
-  color: #1F2937;
-  font-size: 36px;
-  font-weight: 900;
+.bottom-block a {
+color: #1F2937;
+font-size: 36px;
+font-weight: 900;
+padding: 20px;
 }
 
 .boxes {
@@ -133,8 +127,6 @@ body{
   text-align: center;
 }
 
-/* SECTION 3 */
-
 .quote {
   display: block;
   background-color: #E5E7EB;
@@ -159,29 +151,30 @@ body{
   text-align: right;
 }
 
-/* SECTION 4 */
-
 .blue-box{
   display:block;
   height: 300px;
   align-content: center;
+  justify-content: center;
 }
 
 .blue-box-box {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  background-color: #3882F6;
-  color: #F9FAF8;
+  background: #3882F6;
   border-radius: 8px;
   margin-left: 15rem;
   margin-right: 15rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  color: #F9FAF8;
 }
 
 .blue-box-text {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-content: center;
   height: 130px;
   padding: 0px;
 }
@@ -198,10 +191,9 @@ body{
   text-align: center;
 }
 
-/* FOOTER */
-
 .footer-block {
   display: flex;
+  background-color: #1F2937;
   height: 100px;
   justify-content: center;
   align-items: center;
